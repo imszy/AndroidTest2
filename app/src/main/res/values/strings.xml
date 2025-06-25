@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AndroidTest2</string>
+    <string name="demo_page">Demo 页面</string>
+    <string name="go_to_demo">进入 Demo 页面</string>
 </resources> 
