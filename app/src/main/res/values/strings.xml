@@ -3,4 +3,7 @@
     <string name="app_name">AndroidTest2</string>
     <string name="demo_page">Demo 页面</string>
     <string name="go_to_demo">进入 Demo 页面</string>
+    <string name="counter_page">计数器页面</string>
+    <string name="add_one">计数+1</string>
+    <string name="go_to_counter">进入计数器页面</string>
 </resources> 

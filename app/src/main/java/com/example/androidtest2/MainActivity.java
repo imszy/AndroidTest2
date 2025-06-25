@@ -18,5 +18,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, DemoActivity.class));
             }
         });
+        Button btnCounter = findViewById(R.id.btnCounter);
+        btnCounter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, CounterActivity.class));
+            }
+        });
     }
 } 
