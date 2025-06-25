@@ -1,6 +1,24 @@
 # AndroidTest2
 
-这是一个简单的 Android Demo 项目，主界面显示 "Hello World"。
+AndroidTest2 是一个面向初学者和自动化集成场景的 Android Demo 仓库，旨在帮助用户无需本地 Android 环境即可体验 Android 应用开发与自动化构建流程。
+
+## 仓库简介
+
+- **用途**：本仓库用于演示如何通过 GitHub Actions 实现 Android 应用的自动化构建和 APK 产出，适合用于学习、CI/CD 流程测试、快速原型开发等场景。
+- **技术栈**：
+  - 语言：Java（主 Activity）
+  - 构建工具：Gradle
+  - 依赖管理：官方 AndroidX 组件、Material Design
+  - 持续集成：GitHub Actions（无需本地 Android 环境）
+- **主要特性**：
+  - 推送代码到 GitHub 后自动构建 APK
+  - 构建产物自动上传，可直接下载
+  - 代码结构清晰，便于二次开发
+  - 适合 Android 新手、CI/CD 流程演示、自动化测试等
+- **适用人群**：
+  - 没有本地 Android 环境但想体验 Android 自动化构建的开发者
+  - 需要快速验证 Android CI/CD 流程的团队
+  - 需要最小可用 Android 工程模板的学习者
 
 ## 目录结构
 
