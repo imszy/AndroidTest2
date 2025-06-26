@@ -1,5 +1,7 @@
 # AndroidTest2
 
+**文档日期：2025.6.26**
+
 AndroidTest2 是一个面向初学者和自动化集成场景的 Android Demo 仓库，旨在帮助用户无需本地 Android 环境即可体验 Android 应用开发、页面跳转、自动化构建与产物下载的完整流程。
 
 ## 仓库简介
