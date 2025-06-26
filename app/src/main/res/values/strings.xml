@@ -6,4 +6,8 @@
     <string name="counter_page">计数器页面</string>
     <string name="add_one">计数+1</string>
     <string name="go_to_counter">进入计数器页面</string>
+    <string name="random_number_page">随机数页面</string>
+    <string name="go_to_random_number">进入随机数页面</string>
+    <string name="generate_random_number">生成随机数</string>
+    <string name="random_number_result">随机数结果：</string>
 </resources> 

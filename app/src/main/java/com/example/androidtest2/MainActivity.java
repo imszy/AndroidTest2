@@ -25,5 +25,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, CounterActivity.class));
             }
         });
+        Button btnRandomNumber = findViewById(R.id.btnRandomNumber);
+        btnRandomNumber.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, RandomNumberActivity.class));
+            }
+        });
     }
 } 

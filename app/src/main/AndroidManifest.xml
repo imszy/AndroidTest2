@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".DemoActivity" />
         <activity android:name=".CounterActivity" />
+        <activity android:name=".RandomNumberActivity" />
     </application>
 
 </manifest> 
