@@ -1,6 +1,6 @@
 # AndroidTest2
 
-AndroidTest2 是一个面向初学者和自动化集成场景的 Android Demo 仓库，旨在帮助用户无需本地 Android 环境即可体验 Android 应用开发与自动化构建流程。
+AndroidTest2 是一个面向初学者和自动化集成场景的 Android Demo 仓库，旨在帮助用户无需本地 Android 环境即可体验 Android 应用开发、页面跳转、自动化构建与产物下载的完整流程。
 
 ## 仓库简介
 
@@ -13,13 +13,42 @@ AndroidTest2 是一个面向初学者和自动化集成场景的 Android Demo �
 - **主要特性**：
   - 推送代码到 GitHub 后自动构建 APK
   - 构建产物自动上传，可直接下载
-  - 新增“随机数页面”：点击按钮可生成 1~10000 的随机数
+  - 主界面可跳转至 Demo 页面、计数器页面、随机数页面
   - 代码结构清晰，便于二次开发
   - 适合 Android 新手、CI/CD 流程演示、自动化测试等
 - **适用人群**：
   - 没有本地 Android 环境但想体验 Android 自动化构建的开发者
   - 需要快速验证 Android CI/CD 流程的团队
   - 需要最小可用 Android 工程模板的学习者
+
+## 应用页面与功能
+
+### 主界面（MainActivity）
+- 显示欢迎文本"Hello World!"。
+- 提供三个按钮，分别跳转到 Demo 页面、计数器页面、随机数页面。
+
+### Demo 页面（DemoActivity）
+- 仅展示一个大号文本："Demo 页面"。
+- 适合作为自定义页面开发的模板。
+
+### 计数器页面（CounterActivity）
+- 显示一个数字（初始为 0）。
+- 点击"计数+1"按钮，数字加一。
+- 适合演示状态管理、事件响应等基础交互。
+
+### 随机数页面（RandomNumberActivity）
+- 显示"随机数结果："及一个数字。
+- 点击"生成随机数"按钮，会在下方显示一个 1~10000 的随机整数。
+- 适合演示简单逻辑处理和 UI 更新。
+
+## 主界面导航示意
+
+主界面按钮顺序如下：
+1. 进入 Demo 页面
+2. 进入计数器页面
+3. 进入随机数页面
+
+每个页面均可通过主界面按钮一键跳转。
 
 ## 目录结构
 
@@ -31,9 +60,16 @@ AndroidTest2/
 │   └── src/
 │       └── main/
 │           ├── AndroidManifest.xml
-│           ├── java/com/example/androidtest2/MainActivity.java
+│           ├── java/com/example/androidtest2/
+│           │   ├── MainActivity.java
+│           │   ├── DemoActivity.java
+│           │   ├── CounterActivity.java
+│           │   └── RandomNumberActivity.java
 │           └── res/
 │               ├── layout/activity_main.xml
+│               ├── layout/activity_demo.xml
+│               ├── layout/activity_counter.xml
+│               ├── layout/activity_random_number.xml
 │               ├── mipmap-anydpi-v26/ic_launcher.xml
 │               ├── mipmap-anydpi-v26/ic_launcher_round.xml
 │               └── values/
@@ -72,6 +108,7 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -110,12 +147,8 @@ sdk.dir=/your/Android/Sdk/path
   - A: 在 GitHub Actions 的构建详情页面，找到 "app-debug-apk" 下载。
 - **Q: 如何更改包名/应用名？**
   - A: 修改 `app/build.gradle` 和相关资源文件即可。
-
-## 随机数页面
-
-应用主界面新增“进入随机数页面”按钮，点击可跳转到随机数页面。
-
-在随机数页面点击“生成随机数”按钮，会在下方显示一个 1~10000 的随机整数。
+- **Q: 各页面如何体验？**
+  - A: 安装 APK 后，主界面有三个按钮，分别进入 Demo、计数器、随机数页面，体验各自功能。
 
 ---
 如有问题欢迎提 issue！ 
