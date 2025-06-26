@@ -51,6 +51,13 @@ AndroidTest2/
 
 本项目已配置好 GitHub Actions 工作流，推送到 GitHub 后会自动构建 APK 并上传。
 
+**现在也支持在 GitHub Actions 页面手动触发工作流（workflow_dispatch）！**
+
+### 手动触发方法
+1. 进入你的 GitHub 仓库页面，点击上方的 "Actions" 选项卡。
+2. 在左侧选择 `Build-App` 工作流。
+3. 点击 "Run workflow" 按钮，即可手动触发一次构建。
+
 ### 步骤
 1. 将本项目代码推送到你的 GitHub 仓库。
 2. Actions 会自动运行，无需本地 Android 环境。
