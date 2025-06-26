@@ -153,6 +153,8 @@ sdk.dir=/your/Android/Sdk/path
 ---
 如有问题欢迎提 issue！
 
+**联系人：lili@cursor.com**
+
 ## License
 
 This project is licensed under the MIT License.
