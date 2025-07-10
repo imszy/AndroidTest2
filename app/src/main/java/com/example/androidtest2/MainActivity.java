@@ -32,5 +32,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, RandomNumberActivity.class));
             }
         });
+        Button btnCameraDemo = findViewById(R.id.btnCameraDemo);
+        btnCameraDemo.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, CameraDemoActivity.class);
+            startActivity(intent);
+        });
     }
 } 
